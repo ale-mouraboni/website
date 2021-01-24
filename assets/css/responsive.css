@@ -1,0 +1,12 @@
+@media (max-width: 991px) {
+    .navbar {
+        border-bottom: 1px solid #f84b67;
+        background-color: #000;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .sticky {
+        padding: 20px 0px 20px 0px !important;
+    }
+}
