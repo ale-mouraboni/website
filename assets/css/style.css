@@ -8,7 +8,7 @@
 .header-area {
     background: url(../img/home-banner.jpg) no-repeat;
     background-position: 50% 0%;
-    height: 1000px;
+    height: 900px;
 }
 
 .navbar {
@@ -55,7 +55,9 @@
     transition: .3s;
 }
 
-.banner-btn:hover {
+.banner-btn:hover,
+.sec-jobs .card .btn:hover
+{
     transition: .3s;
     color: #fff;
     background-color: #c43d54;
@@ -67,4 +69,19 @@
     padding: 8px 0px 28px 0px;
     transition: .6s;
     background-color: rgba(0,0,0,.8);
+}
+
+.sec-jobs {
+    margin-top: 10%;
+}
+
+.sec-jobs .card {
+    background-color: #efefef;
+    border-radius: 10%;
+    border: 1px solid #f84b683a;
+}
+
+.sec-jobs .card .btn {
+    background-color: #f84b67;
+    border-radius: 0%;
 }
