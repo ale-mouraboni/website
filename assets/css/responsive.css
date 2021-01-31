@@ -30,3 +30,12 @@
         padding: 20px 0px 20px 0px !important;
     }
 }
+
+@media (max-width: 415px) {
+    #contact .form-contact .form-row .form-group input,
+    #contact .form-contact .form-row .form-group textarea 
+    {
+        
+        width: 250px !important;
+    }
+}
