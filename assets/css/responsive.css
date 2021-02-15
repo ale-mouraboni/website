@@ -31,6 +31,12 @@
     }
 }
 
+@media (max-width: 767px) {
+    .sec-jobs .card-body {
+        text-align: center;
+    }
+}
+
 @media (max-width: 415px) {
     #contact .form-contact .form-row .form-group input,
     #contact .form-contact .form-row .form-group textarea 

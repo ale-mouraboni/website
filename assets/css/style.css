@@ -71,10 +71,6 @@
     background-color: rgba(0,0,0,.8);
 }
 
-.sec-jobs {
-    margin-top: 10%;
-}
-
 .sec-jobs .card {
     background-color: #efefef;
     border-radius: 10%;
@@ -89,4 +85,11 @@
 #contact {
     color: #fff;
     background: url(../img/banner-md.jpg);
+}
+
+#contact input:focus,
+#contact textarea:focus
+{
+    box-shadow: 0px 0px 10px #f84b67;
+    border: 1px solid rgba(0,0,0,.3);
 }
