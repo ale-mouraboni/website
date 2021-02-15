@@ -32,8 +32,18 @@
 }
 
 @media (max-width: 767px) {
-    .sec-jobs .card-body {
-        text-align: center;
+    footer {
+        font-size: 11px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    footer p {
+        text-align: center !important;
+    }
+
+    footer .contact-footer {
+        margin-top: 0 !important;
     }
 }
 

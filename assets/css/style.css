@@ -15,6 +15,20 @@
     transition: .3s;
 }
 
+.navbar .navbar-brand {
+    margin-top: 20px;
+    padding-right: 15px;
+}
+
+.navbar .navbar-brand i {
+    transition: .3s;
+    font-size: 20px;
+}
+
+.navbar .navbar-brand i:hover {
+    color: #f84b67;
+}
+
 .navbar .nav-link {
     color: #fff !important;
     font-size: 14px !important;
@@ -65,13 +79,13 @@
 }
 
 .sticky {
-    border-bottom: 1px solid #f84b67;
     padding: 8px 0px 28px 0px;
     transition: .6s;
     background-color: rgba(0,0,0,.8);
 }
 
 .sec-jobs .card {
+    text-align: center;
     background-color: #efefef;
     border-radius: 10%;
     border: 1px solid #f84b683a;
@@ -92,4 +106,19 @@
 {
     box-shadow: 0px 0px 10px #f84b67;
     border: 1px solid rgba(0,0,0,.3);
+}
+
+footer {
+    background-color: #1f2338;
+    border-top: 1px solid #7979797c;
+    color: #fff;
+    font-size: 12px;
+}
+
+footer p {
+    margin-top: 15px;
+}
+
+footer .contact-footer {
+    text-align: end;
 }
