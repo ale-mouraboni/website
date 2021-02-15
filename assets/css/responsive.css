@@ -1,0 +1,41 @@
+@media (max-width: 991px) {
+    .header-area {
+        background: url(../img/banner-md.jpg) no-repeat !important;
+        background-position: 80% !important;
+        height: 800px !important;
+        text-align: center;
+    }
+    
+    .navbar {
+        border-bottom: 1px solid #f84b67;
+        background-color: #000;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .navbar .menu-nav, .navbar .nav-item {
+        margin: 0 !important;
+    }
+    
+    .navbar .nav-link {
+        text-align: center;
+        border-bottom: 1px solid #424242;
+    }
+
+    .banner-content {
+        margin-top: 40% !important;
+    }
+
+    .sticky {
+        padding: 20px 0px 20px 0px !important;
+    }
+}
+
+@media (max-width: 415px) {
+    #contact .form-contact .form-row .form-group input,
+    #contact .form-contact .form-row .form-group textarea 
+    {
+        
+        width: 250px !important;
+    }
+}
