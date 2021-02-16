@@ -17,7 +17,8 @@
 
 .navbar .navbar-brand {
     margin-top: 20px;
-    padding-right: 15px;
+    padding-right: 20px;
+    cursor: pointer;
 }
 
 .navbar .navbar-brand i {
@@ -72,16 +73,16 @@
 .banner-btn:hover,
 .sec-jobs .card .btn:hover
 {
-    transition: .3s;
+    transition: .4s;
     color: #fff;
     background-color: #c43d54;
     border: 1px solid #c43d54;
 }
 
 .sticky {
-    padding: 8px 0px 28px 0px;
-    transition: .6s;
-    background-color: rgba(0,0,0,.8);
+    transition: .7s;
+    background-color: #000000e6;
+    border-bottom: 1px solid #f84b67;
 }
 
 .sec-jobs .card {
