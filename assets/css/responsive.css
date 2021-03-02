@@ -64,8 +64,8 @@
         margin-top: 67% !important;
     }
     
-    #contact .form-contact .form-row .form-group input,
-    #contact .form-contact .form-row .form-group textarea 
+    #contact #form-contact .form-row .form-group input,
+    #contact #form-contact .form-row .form-group textarea 
     {
         width: 250px !important;
     }

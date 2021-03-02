@@ -8,6 +8,41 @@
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            window.addEventListener("scroll", function () {
+                let nav = document.querySelector("nav")
+                nav.classList.toggle("sticky", window.scrollY > 0)
+            })
+
+            emailjs.init('user_hIstmKEiOc7ypy7BbUx2t');
+
+            const btn = document.getElementById('button');
+
+            document.getElementById('form-contact')
+            .addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                btn.value = 'Enviando...';
+
+                const serviceID = 'service_mjmo6is';
+                const templateID = 'template_x6cdn7j';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Enviar Email';
+                        alert('Email Enviado com Sucesso!');
+                    }, (err) => {
+                        btn.value = 'Enviar Email';
+                        alert(JSON.stringify(err));
+                    });
+            });
+        }
+    </script>
+
     <title>Criação de Sites Profissionais e Responsivos!</title>
 </head>
 
@@ -141,7 +176,8 @@
                         <p>Meu repositório completo não está aqui, para acessar o meu repositório completo clique no
                             botão abaixo.
                         </p>
-                        <a class="btn banner-btn" href="https://github.com/ale-mouraboni?tab=repositories" target="_blank">Acessar Repositório</a>
+                        <a class="btn banner-btn" href="https://github.com/ale-mouraboni?tab=repositories"
+                            target="_blank">Acessar Repositório</a>
                     </div>
                 </div>
             </div>
@@ -164,7 +200,7 @@
 
             <div class="row mt-3">
                 <div class="ml-auto mr-auto">
-                    <form class="form-contact">
+                    <form id="form-contact">
                         <div class="form-row">
                             <div class="form-group">
                                 <input type="text" class="form-control" name="name" id="inputName" placeholder="Nome"
@@ -173,7 +209,7 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="name" id="inputEmail" placeholder="E-mail"
+                                <input type="text" class="form-control" name="email" id="inputEmail" placeholder="E-mail"
                                     required style="width: 400px;">
                             </div>
                         </div>
@@ -191,9 +227,9 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group ml-auto mr-auto">
-                                <a class="btn banner-btn" href="" style="width: 150px;">
+                                <button id="button" class="btn banner-btn" style="width: 150px;">
                                     Enviar
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </form>
@@ -206,11 +242,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <p class="text-muted copy-footer">Copyright &copy; - Todos os direitos reservados</p>
+                    <p class="text-muted copy-footer">Copyright &copy;
+                        <br>
+                        Todos os direitos reservados.
+                    </p>
                 </div>
                 <div class="col-sm-6">
                     <p class="text-muted contact-footer"><i class="fab fa-whatsapp" style="font-size: 13px;"></i> (11)
-                        93439-3530 - <i class="far fa-envelope" style="font-size: 13px;"></i> contato@gmail.com</p>
+                        93439-3530
+                        <br>
+                        <i class="far fa-envelope" style="font-size: 13px;"></i> alexandre@cajucomunica.com.br
+                    </p>
                 </div>
             </div>
         </div>
